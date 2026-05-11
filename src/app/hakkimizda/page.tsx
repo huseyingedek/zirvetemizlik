@@ -67,7 +67,7 @@ export default function HakkimizdaPage() {
       <section className="relative h-72 md:h-96 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero1.jpg"
+            src="/images/hero2.png"
             alt="Zirve Temizlik ekibi - hakkımızda"
             fill
             className="object-cover object-top"

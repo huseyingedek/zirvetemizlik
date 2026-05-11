@@ -140,10 +140,10 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero1.jpg"
+            src="/images/hero2.png"
             alt="Profesyonel temizlik hizmeti - Zirve Temizlik İstanbul"
             fill
-            className="object-cover object-center"
+            className="object-cover object-[70%_80%] md:object-center"
             priority
             sizes="100vw"
           />
@@ -212,21 +212,7 @@ export default function HomePage() {
       </section>
 
       {/* ─── İSTATİSTİK ŞERIDI ─── */}
-      <section className="bg-blue-700 text-white">
-        <div className="container mx-auto px-4 py-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-0 divide-x divide-white/20">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center px-6 py-3">
-                <stat.icon size={22} className="mx-auto mb-1.5 text-blue-200" />
-                <div className="text-2xl md:text-3xl font-extrabold">
-                  <AnimatedCounter value={stat.value} />
-                </div>
-                <div className="text-blue-200 text-xs mt-0.5 font-medium">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Geçici olarak kaldırıldı */}
 
       {/* ─── HİZMETLERİMİZ ─── */}
       <section className="py-20 bg-gray-50">

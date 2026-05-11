@@ -77,7 +77,6 @@ export default function Footer() {
           <ul className="space-y-2">
             {[
               { href: "/hakkimizda", label: "Hakkımızda" },
-              { href: "/fiyatlar", label: "Fiyat Listesi" },
               { href: "/blog", label: "Blog" },
               { href: "/iletisim", label: "İletişim" },
               { href: "/hizmetler", label: "Tüm Hizmetler" },

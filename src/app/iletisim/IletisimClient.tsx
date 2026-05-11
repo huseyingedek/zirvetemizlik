@@ -81,7 +81,7 @@ export default function IletisimClient() {
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero1.jpg"
+            src="/images/hero2.png"
             alt="Zirve Temizlik iletişim"
             fill
             className="object-cover object-center"
