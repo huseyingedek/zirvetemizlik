@@ -23,8 +23,8 @@ export async function POST(request: Request) {
     const serviceLabel = serviceLabels[service] || service;
 
     const { error } = await resend.emails.send({
-      from: "Zirve Temizlik <onboarding@resend.dev>",
-      to: [process.env.RESEND_TO || "kul12ibo@gmail.com"],
+      from: "Zirve Temizlik <info@zirvetemizlik.tr>",
+      to: ["kul12ibo@gmail.com"],
       replyTo: email || undefined,
       subject: `🔔 Yeni Teklif Talebi — ${name}`,
       html: `
