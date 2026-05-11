@@ -8,7 +8,7 @@ export const WHATSAPP = "905325466163";
 export const EMAIL = "kul12ibo@gmail.com";
 export const ADDRESS = "Hicret Mah. Taşkın Sok. No:25/3 Arnavutköy/İstanbul";
 export const MAPS_URL =
-  "https://maps.google.com/?q=Hicret+Mahallesi+Taşkın+Sokak+No25+Arnavutköy+İstanbul";
+  "https://maps.google.com/?q=Başakşehir+İstanbul";
 export const WORKING_HOURS = "7/24 Hizmet";
 
 export const SERVICES = [

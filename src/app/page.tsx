@@ -34,25 +34,23 @@ const jsonLd = {
     "İstanbul'un güvenilir profesyonel temizlik şirketi. Ev, ofis, derin temizlik ve daha fazlası.",
   "@id": SITE_URL,
   url: SITE_URL,
-  telephone: "+90-532-123-45-67",
+  telephone: "+90-532-546-61-63",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Bağcılar",
-    addressLocality: "İstanbul",
+    streetAddress: "Hicret Mah. Taşkın Sok. No:25/3",
+    addressLocality: "Arnavutköy",
+    addressRegion: "İstanbul",
     addressCountry: "TR",
   },
   openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "08:00",
-      closes: "20:00",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+      opens: "00:00",
+      closes: "23:59",
     },
   ],
-  sameAs: [
-    "https://www.facebook.com/zirvetemizlik",
-    "https://www.instagram.com/zirvetemizlik",
-  ],
+  sameAs: [],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
@@ -451,38 +449,18 @@ export default function HomePage() {
       {/* ─── HİZMET BÖLGELERİ ─── */}
       <section className="py-16 bg-white border-y border-gray-100">
         <div className="container mx-auto px-4">
-          <FadeIn className="text-center mb-8">
-            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-2">
-              Hizmet Bölgelerimiz
+          <FadeIn className="text-center">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+              Hizmet Bölgemiz
             </h2>
-            <p className="text-gray-600">
+            <p className="text-gray-600 mb-8">
               İstanbul&apos;un tüm ilçelerine profesyonel temizlik hizmeti sunuyoruz.
             </p>
+            <div className="inline-flex items-center gap-3 bg-blue-50 border border-blue-200 text-blue-700 text-lg font-bold px-8 py-4 rounded-2xl">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              İstanbul Geneli
+            </div>
           </FadeIn>
-          <div className="flex flex-wrap justify-center gap-2">
-            {[
-              "Kadıköy", "Beşiktaş", "Şişli", "Fatih", "Üsküdar", "Maltepe",
-              "Ataşehir", "Bakırköy", "Bağcılar", "Bahçelievler", "Beylikdüzü",
-              "Esenyurt", "Pendik", "Kartal", "Tuzla", "Sancaktepe", "Ümraniye",
-              "Başakşehir", "Sultangazi", "Arnavutköy",
-            ].map((ilce) => (
-              <Link
-                key={ilce}
-                href="/hizmet-bolgeleri"
-                className="bg-gray-50 hover:bg-blue-50 hover:text-blue-700 border border-gray-200 hover:border-blue-300 text-gray-700 text-sm px-3.5 py-2 rounded-lg font-medium transition-colors"
-              >
-                {ilce} Temizlik
-              </Link>
-            ))}
-          </div>
-          <div className="text-center mt-6">
-            <Link
-              href="/hizmet-bolgeleri"
-              className="inline-flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors"
-            >
-              Tüm hizmet bölgelerimizi gör <ChevronRight size={16} />
-            </Link>
-          </div>
         </div>
       </section>
 

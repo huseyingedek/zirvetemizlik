@@ -21,12 +21,14 @@ const iconColorMap: Record<string, string> = {
   green: "bg-green-100 text-green-600",
 };
 
+const EASE: [number, number, number, number] = [0.25, 0.1, 0.25, 1];
+
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, delay: i * 0.1, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.5, delay: i * 0.1, ease: EASE },
   }),
 };
 
@@ -35,13 +37,13 @@ const slideRight = {
   visible: (i: number) => ({
     opacity: 1,
     x: 0,
-    transition: { duration: 0.5, delay: 0.1 + i * 0.08, ease: [0.25, 0.1, 0.25, 1] },
+    transition: { duration: 0.5, delay: 0.1 + i * 0.08, ease: EASE },
   }),
 };
 
 const slideLeft = {
   hidden: { opacity: 0, x: 24 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.55, delay: 0.2, ease: [0.25, 0.1, 0.25, 1] } },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.55, delay: 0.2, ease: EASE } },
 };
 
 export default function IletisimClient() {
