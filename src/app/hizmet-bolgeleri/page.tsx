@@ -88,7 +88,7 @@ export default function HizmetBolgeleriPage() {
       <section className="relative min-h-[55vh] flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/bolge-hero2.png"
+            src="/images/bolge-hero1.jpg"
             alt="İstanbul geneli profesyonel temizlik hizmeti"
             fill
             className="object-cover object-center"

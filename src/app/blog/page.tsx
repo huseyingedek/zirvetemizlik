@@ -55,7 +55,7 @@ export default function BlogPage() {
       <section className="relative h-64 md:h-80 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/blog-hero2.png"
+            src="/images/blog-hero1.jpg"
             alt="Zirve Temizlik Blog"
             fill
             className="object-cover"
