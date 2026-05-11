@@ -140,7 +140,7 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=75"
+            src="/images/hero.jpg"
             alt="Profesyonel temizlik hizmeti - Zirve Temizlik İstanbul"
             fill
             className="object-cover object-center"
@@ -268,7 +268,7 @@ export default function HomePage() {
             {/* Sol: Görsel */}
             <FadeIn direction="left" className="relative rounded-2xl overflow-hidden shadow-2xl h-[480px]">
               <Image
-                src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80"
+                src="/images/ekip.jpg"
                 alt="Profesyonel temizlik ekibi - Zirve Temizlik"
                 fill
                 className="object-cover"
@@ -492,7 +492,7 @@ export default function HomePage() {
                 category: "İpuçları",
                 date: "15 Nis 2026",
                 slug: "ev-temizliginde-dogal-yontemler",
-                img: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80",
+                img: "/images/blog/dogal-yontemler.jpg",
               },
               {
                 title: "Ofis Temizliği Neden Bu Kadar Önemli?",
@@ -500,7 +500,7 @@ export default function HomePage() {
                 category: "Kurumsal",
                 date: "28 Mar 2026",
                 slug: "ofis-temizligi-neden-onemli",
-                img: "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=600&q=80",
+                img: "/images/blog/ofis-temizligi.jpg",
               },
               {
                 title: "İnşaat Sonrası Temizlik Rehberi",
@@ -508,7 +508,7 @@ export default function HomePage() {
                 category: "Rehber",
                 date: "10 Mar 2026",
                 slug: "insaat-sonrasi-temizlik-rehberi",
-                img: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+                img: "/images/blog/insaat-rehberi.jpg",
               },
             ].map((post) => (
               <Link

@@ -38,12 +38,9 @@ const jsonLd = {
 const categories = ["Tümü", "İpuçları", "Kurumsal", "Rehber"];
 
 const blogImages: Record<string, string> = {
-  "ev-temizliginde-dogal-yontemler":
-    "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=800&q=80",
-  "ofis-temizligi-neden-onemli":
-    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=80",
-  "insaat-sonrasi-temizlik-rehberi":
-    "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80",
+  "ev-temizliginde-dogal-yontemler": "/images/blog/dogal-yontemler.jpg",
+  "ofis-temizligi-neden-onemli": "/images/blog/ofis-temizligi.jpg",
+  "insaat-sonrasi-temizlik-rehberi": "/images/blog/insaat-rehberi.jpg",
 };
 
 export default function BlogPage() {
@@ -58,7 +55,7 @@ export default function BlogPage() {
       <section className="relative h-64 md:h-80 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=1920&q=75"
+            src="/images/blog-hero.jpg"
             alt="Zirve Temizlik Blog"
             fill
             className="object-cover"

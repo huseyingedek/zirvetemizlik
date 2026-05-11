@@ -19,8 +19,7 @@ export const SERVICES = [
     longDesc:
       "Yeni taşındığınız evi teslim almadan önce ya da dolu evinizin köşe bucak temizlenmesini istiyorsanız profesyonel ekibimiz hazır. Mutfak, banyo, yatak odası, salon — hiçbir alan gözden kaçmaz.",
     icon: "🏠",
-    image:
-      "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/bos-ev.jpg",
     keywords: [
       "boş ev temizliği İstanbul",
       "dolu ev temizliği",
@@ -43,8 +42,7 @@ export const SERVICES = [
     longDesc:
       "Binanızın ortak alanlarını; giriş holü, merdivenler, asansör kabini ve kat koridorlarını düzenli veya tek seferlik profesyonelce temizliyoruz.",
     icon: "🏬",
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/bina.jpg",
     keywords: [
       "bina temizliği İstanbul",
       "apartman temizliği",
@@ -67,8 +65,7 @@ export const SERVICES = [
     longDesc:
       "Temiz bir ofis çalışan verimliliğini artırır ve kurumsal imajınızı güçlendirir. Düzenli veya tek seferlik ofis temizliği hizmetimizle çözüm sunuyoruz.",
     icon: "🏢",
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/ofis.jpg",
     keywords: [
       "ofis temizliği İstanbul",
       "iş yeri temizliği",
@@ -90,8 +87,7 @@ export const SERVICES = [
     longDesc:
       "Yeni evinizin veya ofisinizin tadilat sonrasındaki toz, boya lekeleri ve moloz artıklarını uzman ekibimiz hızla ortadan kaldırır.",
     icon: "🏗️",
-    image:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/insaat.jpg",
     keywords: [
       "inşaat sonrası temizlik İstanbul",
       "tadilat temizliği",
@@ -113,8 +109,7 @@ export const SERVICES = [
     longDesc:
       "Villanızın tüm katları, bahçe girişi, havuz çevresi ve tüm yaşam alanlarını kapsamlı biçimde temizliyoruz. Büyük alanlara özel ekip ve ekipman.",
     icon: "🏡",
-    image:
-      "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/villa.jpg",
     keywords: [
       "villa temizliği İstanbul",
       "müstakil ev temizliği",
@@ -136,8 +131,7 @@ export const SERVICES = [
     longDesc:
       "Fabrika ve üretim tesislerinin makine çevresi, üretim alanı, soyunma odaları, yemekhane ve idari bölümlerinin endüstriyel temizliği için uzman ekibimiz hizmetinizdedir.",
     icon: "🏭",
-    image:
-      "https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/fabrika.jpg",
     keywords: [
       "fabrika temizliği İstanbul",
       "endüstriyel temizlik",
@@ -159,8 +153,7 @@ export const SERVICES = [
     longDesc:
       "Rezidans yaşam standartlarına uygun daire içi, kat koridorları, lobi ve tüm ortak alanların titizlikle temizlenmesi için profesyonel ekibimiz hazır.",
     icon: "🏨",
-    image:
-      "https://images.unsplash.com/photo-1527515545081-5db817172677?auto=format&fit=crop&w=600&q=80",
+    image: "/images/services/rezidans.jpg",
     keywords: [
       "rezidans temizliği İstanbul",
       "lüks daire temizliği",

@@ -68,7 +68,7 @@ export default function HizmetlerPage() {
       <section className="relative h-72 md:h-96 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1527515545081-5db817172677?auto=format&fit=crop&w=1920&q=75"
+            src="/images/hizmetler-hero.jpg"
             alt="Profesyonel temizlik hizmetleri - Zirve Temizlik"
             fill
             className="object-cover object-center"

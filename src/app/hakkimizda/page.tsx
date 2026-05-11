@@ -67,7 +67,7 @@ export default function HakkimizdaPage() {
       <section className="relative h-72 md:h-96 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=75"
+            src="/images/hero.jpg"
             alt="Zirve Temizlik ekibi - hakkımızda"
             fill
             className="object-cover object-top"
@@ -116,7 +116,7 @@ export default function HakkimizdaPage() {
             {/* Görsel */}
             <FadeIn direction="left" className="relative rounded-2xl overflow-hidden shadow-2xl h-[460px]">
               <Image
-                src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?auto=format&fit=crop&w=800&q=80"
+                src="/images/ekip.jpg"
                 alt="Zirve Temizlik profesyonel ekip"
                 fill
                 className="object-cover"
