@@ -38,9 +38,9 @@ const jsonLd = {
 const categories = ["Tümü", "İpuçları", "Kurumsal", "Rehber"];
 
 const blogImages: Record<string, string> = {
-  "ev-temizliginde-dogal-yontemler": "/images/blog/dogal-yontemler.jpg",
-  "ofis-temizligi-neden-onemli": "/images/blog/ofis-temizligi.jpg",
-  "insaat-sonrasi-temizlik-rehberi": "/images/blog/insaat-rehberi.jpg",
+  "ev-temizliginde-dogal-yontemler": "/images/blog/dogal-yontemler1.jpg",
+  "ofis-temizligi-neden-onemli": "/images/blog/ofis-temizligi1.jpg",
+  "insaat-sonrasi-temizlik-rehberi": "/images/blog/insaat-rehberi1.jpg",
 };
 
 export default function BlogPage() {
@@ -55,7 +55,7 @@ export default function BlogPage() {
       <section className="relative h-64 md:h-80 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/blog-hero.jpg"
+            src="/images/blog-hero1.jpg"
             alt="Zirve Temizlik Blog"
             fill
             className="object-cover"

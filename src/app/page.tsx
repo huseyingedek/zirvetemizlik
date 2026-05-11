@@ -50,7 +50,7 @@ const jsonLd = {
       closes: "23:59",
     },
   ],
-  sameAs: [],
+  sameAs: ["https://www.instagram.com/temizlikzirve"],
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.9",
@@ -140,7 +140,7 @@ export default function HomePage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero1.jpg"
             alt="Profesyonel temizlik hizmeti - Zirve Temizlik İstanbul"
             fill
             className="object-cover object-center"
@@ -268,7 +268,7 @@ export default function HomePage() {
             {/* Sol: Görsel */}
             <FadeIn direction="left" className="relative rounded-2xl overflow-hidden shadow-2xl h-[480px]">
               <Image
-                src="/images/ekip.jpg"
+                src="/images/ekip1.jpg"
                 alt="Profesyonel temizlik ekibi - Zirve Temizlik"
                 fill
                 className="object-cover"
@@ -492,7 +492,7 @@ export default function HomePage() {
                 category: "İpuçları",
                 date: "15 Nis 2026",
                 slug: "ev-temizliginde-dogal-yontemler",
-                img: "/images/blog/dogal-yontemler.jpg",
+                img: "/images/blog/dogal-yontemler1.jpg",
               },
               {
                 title: "Ofis Temizliği Neden Bu Kadar Önemli?",
@@ -500,7 +500,7 @@ export default function HomePage() {
                 category: "Kurumsal",
                 date: "28 Mar 2026",
                 slug: "ofis-temizligi-neden-onemli",
-                img: "/images/blog/ofis-temizligi.jpg",
+                img: "/images/blog/ofis-temizligi1.jpg",
               },
               {
                 title: "İnşaat Sonrası Temizlik Rehberi",
@@ -508,7 +508,7 @@ export default function HomePage() {
                 category: "Rehber",
                 date: "10 Mar 2026",
                 slug: "insaat-sonrasi-temizlik-rehberi",
-                img: "/images/blog/insaat-rehberi.jpg",
+                img: "/images/blog/insaat-rehberi1.jpg",
               },
             ].map((post) => (
               <Link

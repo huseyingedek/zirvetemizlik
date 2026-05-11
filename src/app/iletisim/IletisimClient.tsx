@@ -52,12 +52,25 @@ export default function IletisimClient() {
   const [loading, setLoading] = useState(false);
   const [focused, setFocused] = useState<string | null>(null);
 
+  const [error, setError] = useState<string | null>(null);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 1200));
-    setSubmitted(true);
-    setLoading(false);
+    setError(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error("Hata");
+      setSubmitted(true);
+    } catch {
+      setError("Mesaj gönderilemedi. Lütfen telefonla ulaşın.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   const whatsappMsg = encodeURIComponent("Merhaba! Teklif almak istiyorum.");
@@ -68,7 +81,7 @@ export default function IletisimClient() {
       <section className="relative h-72 md:h-96 flex items-end overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero1.jpg"
             alt="Zirve Temizlik iletişim"
             fill
             className="object-cover object-center"
@@ -500,6 +513,11 @@ export default function IletisimClient() {
                           </motion.button>
                         </motion.div>
 
+                        {error && (
+                          <p className="text-sm text-red-600 text-center bg-red-50 border border-red-200 rounded-xl py-3 px-4">
+                            ⚠️ {error}
+                          </p>
+                        )}
                         <p className="text-xs text-gray-400 text-center">
                           🔒 Bilgileriniz güvenle saklanır. Üçüncü şahıslarla paylaşılmaz.
                         </p>

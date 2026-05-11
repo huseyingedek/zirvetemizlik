@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X, Phone, ChevronDown, MapPin, Clock, Shield } from "lucide-react";
 import { NAV_LINKS, PHONE, WHATSAPP, SITE_NAME, SERVICES } from "@/lib/constants";
@@ -85,18 +86,18 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-[68px]">
+          <div className="flex items-center justify-between h-[80px]">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-2.5 shrink-0">
-              <div className="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center">
-                <span className="text-white font-black text-sm">ZT</span>
-              </div>
-              <div>
-                <div className="font-black text-gray-900 text-base leading-tight">{SITE_NAME}</div>
-                <div className="text-[10px] text-blue-600 font-semibold uppercase tracking-wide">
-                  Profesyonel Temizlik
-                </div>
-              </div>
+            <Link href="/" className="flex items-center gap-3 shrink-0">
+              <Image
+                src="/images/logo.jpg"
+                alt="Zirve Temizlik Logo"
+                width={200}
+                height={72}
+                className="h-[72px] w-auto object-contain"
+                priority
+              />
+              <div className="font-black text-gray-900 text-lg leading-tight">Zirve Temizlik</div>
             </Link>
 
             {/* Desktop Nav */}

@@ -42,7 +42,7 @@ export default function GaleriPage() {
       <section className="relative min-h-[55vh] flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero1.jpg"
             alt="Zirve Temizlik profesyonel çalışmalar galeri"
             fill
             className="object-cover object-center"

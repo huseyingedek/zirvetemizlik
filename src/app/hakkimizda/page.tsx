@@ -67,7 +67,7 @@ export default function HakkimizdaPage() {
       <section className="relative h-72 md:h-96 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/hero.jpg"
+            src="/images/hero1.jpg"
             alt="Zirve Temizlik ekibi - hakkımızda"
             fill
             className="object-cover object-top"
@@ -116,7 +116,7 @@ export default function HakkimizdaPage() {
             {/* Görsel */}
             <FadeIn direction="left" className="relative rounded-2xl overflow-hidden shadow-2xl h-[460px]">
               <Image
-                src="/images/ekip.jpg"
+                src="/images/ekip1.jpg"
                 alt="Zirve Temizlik profesyonel ekip"
                 fill
                 className="object-cover"

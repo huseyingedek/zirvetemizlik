@@ -61,12 +61,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  twitter: {
-    card: "summary_large_image",
-    title: `${SITE_NAME} | Profesyonel Temizlik Hizmetleri İstanbul`,
-    description: SITE_DESCRIPTION,
-    images: [`${SITE_URL}/og-image.jpg`],
-  },
   alternates: {
     canonical: SITE_URL,
   },

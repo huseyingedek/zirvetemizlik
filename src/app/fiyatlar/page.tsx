@@ -90,7 +90,7 @@ export default function FiyatlarPage() {
       <section className="relative h-64 md:h-80 flex items-end">
         <div className="absolute inset-0">
           <Image
-            src="/images/fiyatlar-hero.jpg"
+            src="/images/fiyatlar-hero1.jpg"
             alt="Zirve Temizlik fiyat listesi"
             fill
             className="object-cover"

@@ -19,7 +19,7 @@ export const SERVICES = [
     longDesc:
       "Yeni taşındığınız evi teslim almadan önce ya da dolu evinizin köşe bucak temizlenmesini istiyorsanız profesyonel ekibimiz hazır. Mutfak, banyo, yatak odası, salon — hiçbir alan gözden kaçmaz.",
     icon: "🏠",
-    image: "/images/services/bos-ev.jpg",
+    image: "/images/services/bos-ev1.jpg",
     keywords: [
       "boş ev temizliği İstanbul",
       "dolu ev temizliği",
@@ -42,7 +42,7 @@ export const SERVICES = [
     longDesc:
       "Binanızın ortak alanlarını; giriş holü, merdivenler, asansör kabini ve kat koridorlarını düzenli veya tek seferlik profesyonelce temizliyoruz.",
     icon: "🏬",
-    image: "/images/services/bina.jpg",
+    image: "/images/services/bina1.jpg",
     keywords: [
       "bina temizliği İstanbul",
       "apartman temizliği",
@@ -65,7 +65,7 @@ export const SERVICES = [
     longDesc:
       "Temiz bir ofis çalışan verimliliğini artırır ve kurumsal imajınızı güçlendirir. Düzenli veya tek seferlik ofis temizliği hizmetimizle çözüm sunuyoruz.",
     icon: "🏢",
-    image: "/images/services/ofis.jpg",
+    image: "/images/services/ofis1.jpg",
     keywords: [
       "ofis temizliği İstanbul",
       "iş yeri temizliği",
@@ -87,7 +87,7 @@ export const SERVICES = [
     longDesc:
       "Yeni evinizin veya ofisinizin tadilat sonrasındaki toz, boya lekeleri ve moloz artıklarını uzman ekibimiz hızla ortadan kaldırır.",
     icon: "🏗️",
-    image: "/images/services/insaat.jpg",
+    image: "/images/services/insaat1.jpg",
     keywords: [
       "inşaat sonrası temizlik İstanbul",
       "tadilat temizliği",
@@ -109,7 +109,7 @@ export const SERVICES = [
     longDesc:
       "Villanızın tüm katları, bahçe girişi, havuz çevresi ve tüm yaşam alanlarını kapsamlı biçimde temizliyoruz. Büyük alanlara özel ekip ve ekipman.",
     icon: "🏡",
-    image: "/images/services/villa.jpg",
+    image: "/images/services/villa1.jpg",
     keywords: [
       "villa temizliği İstanbul",
       "müstakil ev temizliği",
@@ -131,7 +131,7 @@ export const SERVICES = [
     longDesc:
       "Fabrika ve üretim tesislerinin makine çevresi, üretim alanı, soyunma odaları, yemekhane ve idari bölümlerinin endüstriyel temizliği için uzman ekibimiz hizmetinizdedir.",
     icon: "🏭",
-    image: "/images/services/fabrika.jpg",
+    image: "/images/services/fabrika1.jpg",
     keywords: [
       "fabrika temizliği İstanbul",
       "endüstriyel temizlik",
@@ -153,7 +153,7 @@ export const SERVICES = [
     longDesc:
       "Rezidans yaşam standartlarına uygun daire içi, kat koridorları, lobi ve tüm ortak alanların titizlikle temizlenmesi için profesyonel ekibimiz hazır.",
     icon: "🏨",
-    image: "/images/services/rezidans.jpg",
+    image: "/images/services/rezidans1.jpg",
     keywords: [
       "rezidans temizliği İstanbul",
       "lüks daire temizliği",
