@@ -41,6 +41,13 @@ const blogImages: Record<string, string> = {
   "ev-temizliginde-dogal-yontemler": "/images/blog/dogal-yontemler1.jpg",
   "ofis-temizligi-neden-onemli": "/images/blog/ofis-temizligi1.jpg",
   "insaat-sonrasi-temizlik-rehberi": "/images/blog/insaat-rehberi1.jpg",
+  "istanbul-ev-temizligi-profesyonel-hizmet": "/images/blog/ev-temizligi1.jpg",
+  "insaat-sonrasi-temizlik-istanbul": "/images/blog/insaat-istanbul1.jpg",
+  "ofis-temizligi-istanbul-kurumsal": "/images/blog/ofis-kurumsal1.jpg",
+  "villa-temizligi-istanbul": "/images/blog/villa-temizligi1.jpg",
+  "bina-apartman-temizligi-istanbul": "/images/blog/bina-temizligi1.jpg",
+  "arnavutkoy-temizlik-sirketi": "/images/blog/arnavutkoy1.jpg",
+  "basaksehir-temizlik-sirketi": "/images/blog/basaksehir1.jpg",
 };
 
 export default function BlogPage() {
