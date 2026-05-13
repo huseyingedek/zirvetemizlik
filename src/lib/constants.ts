@@ -181,67 +181,145 @@ export const NAV_LINKS = [
 
 export const BLOG_POSTS = [
   {
-    slug: "ev-temizliginde-dogal-yontemler",
-    title: "Ev Temizliğinde Doğal Yöntemler: Kimyasalsız Temiz Ev",
+    slug: "istanbul-ev-temizligi-profesyonel-hizmet",
+    title: "İstanbul'da Profesyonel Ev Temizliği: Nelere Dikkat Etmeli?",
     excerpt:
-      "Sağlığınızı ve çevreyi korurken evinizi tertemiz tutmanın doğal yollarını keşfedin.",
-    date: "2026-04-15",
-    category: "İpuçları",
+      "İstanbul'da güvenilir ev temizlik şirketi seçerken dikkat etmeniz gereken 7 kritik nokta.",
+    date: "2026-05-08",
+    category: "Rehber",
     readTime: "5 dk",
-    content: `Kimyasal temizlik ürünleri evinizi temizlerken sağlığınıza zarar verebilir. İşte doğal alternatifler:
+    content: `İstanbul'da profesyonel ev temizliği hizmeti almak isteyenler için doğru şirketi seçmek büyük önem taşır. Sigortalı personel, şeffaf fiyatlandırma ve referanslar başlıca kriterler arasındadır.
 
-**Sirke ile Temizlik**
-Beyaz sirke, yüzey temizliği için mükemmeldir. Su ile 1:1 oranında karıştırarak cam, tezgah ve lavabo temizliğinde kullanabilirsiniz.
+**1. Sigortalı ve Eğitimli Personel**
+Evinize girecek temizlik personelinin sigortalı olması hem güvenliğiniz hem de yasal açıdan kritiktir. Zirve Temizlik olarak tüm personelimiz sigortalı ve eğitimlidir.
 
-**Karbonat Soda**
-Kötü kokuları gidermek ve hafif lekeleri çıkarmak için karbonat soda harikadır. Fırın ve bulaşık makinesini karbonatla temizleyebilirsiniz.
+**2. Şeffaf Fiyatlandırma**
+Gizli ücret uygulaması müşteri memnuniyetsizliğinin en büyük sebebidir. Önceden net fiyat alın.
 
-**Limon Suyu**
-Kireç lekeleriyle mücadelede limon suyu son derece etkilidir. Musluklara ve lavaboya limon sürerek parlatabilirsiniz.
+**3. Kullanılan Temizlik Ürünleri**
+Çocuk ve evcil hayvan dostu, çevre sertifikalı ürünler kullanan firmalar tercih edilmelidir.
 
-**Zeytinyağı**
-Ahşap yüzeyleri parlatmak için zeytinyağı kullanabilirsiniz.`,
+**4. Referans ve Değerlendirmeler**
+Google yorumları ve müşteri referansları şirket hakkında en dürüst bilgiyi verir.
+
+**5. 7/24 Ulaşılabilirlik**
+Acil durumlar için 7/24 hizmet sunan firmalar tercih edilmelidir.
+
+**6. Aynı Gün Hizmet**
+İstanbul'un yoğun temposunda aynı gün hizmet veren firmalar büyük avantaj sağlar.
+
+**7. Memnuniyet Garantisi**
+Memnun kalmazsanız ücretsiz yeniden temizlik garantisi sunan firmaları tercih edin.
+
+Zirve Temizlik olarak İstanbul genelinde tüm bu kriterleri karşılayan profesyonel ev temizliği hizmeti sunuyoruz. Hemen teklif almak için bizi arayın.`,
   },
   {
-    slug: "ofis-temizligi-neden-onemli",
-    title: "Ofis Temizliği Neden Bu Kadar Önemli? Verimlilik ve Hijyen",
+    slug: "insaat-sonrasi-temizlik-istanbul",
+    title: "İnşaat Sonrası Temizlik İstanbul — Tadilat Temizliği Rehberi",
     excerpt:
-      "Temiz bir ofis ortamı çalışan motivasyonunu artırır ve hastalık nedeniyle kaybedilen günleri azaltır.",
-    date: "2026-03-28",
-    category: "Kurumsal",
-    readTime: "4 dk",
-    content: `Araştırmalar, çalışanların zamanlarının yüzde doksanını kapalı ortamlarda geçirdiğini gösteriyor.
-
-**Verimlilik Artışı**
-Düzenli ve temiz bir ofis ortamı, çalışanların odaklanmasını kolaylaştırır.
-
-**Hastalık Riskini Azaltma**
-Düzenli dezenfeksiyon ile ofiste yayılan grip ve soğuk algınlığı vakaları önemli ölçüde azalmaktadır.
-
-**Kurumsal İmaj**
-Müşterileriniz temiz bir ofiste sizi daha güvenilir bulur.`,
-  },
-  {
-    slug: "insaat-sonrasi-temizlik-rehberi",
-    title: "İnşaat Sonrası Temizlik: Adım Adım Rehber",
-    excerpt:
-      "Tadilat bitti, şimdi ne yapmalısınız? İnşaat sonrası temizliğin tüm aşamalarını anlattık.",
-    date: "2026-03-10",
+      "Tadilat veya inşaat bitti mi? İnşaat sonrası temizliğin nasıl yapıldığını ve neden profesyonel destek almanız gerektiğini anlattık.",
+    date: "2026-05-05",
     category: "Rehber",
     readTime: "6 dk",
-    content: `İnşaat veya tadilat sonrasında birikmiş toz ve artıkları temizlemek uzmanlık gerektirir.
+    content: `İstanbul'da inşaat sonrası temizlik, standart bir ev temizliğinden çok farklıdır. Toz, kireç, boya lekeleri ve moloz artıkları özel ekipman ve uzmanlık gerektirmektedir.
 
-**1. Aşama: Kaba Temizlik**
-Büyük moloz ve inşaat artıkları önce toplanır.
+**İnşaat Sonrası Temizlik Neden Zordur?**
+Tadilat sırasında ortaya çıkan ince toz partikülleri hava kanallarına, dolaplara ve her köşeye sızar. Standart süpürge ve bez bu tozu tam olarak temizleyemez.
 
-**2. Aşama: Toz Temizliği**
-Özel HEPA filtreli elektrik süpürgeleri ile ince toz partikülleri toplanır.
+**Profesyonel Ekipman Şart**
+HEPA filtreli endüstriyel süpürgeler, buharlı temizleme makineleri ve özel kimyasallar olmadan inşaat tozu tam anlamıyla temizlenemez.
 
-**3. Aşama: Yüzey Temizliği**
-Boya lekeleri, yapıştırıcı artıkları özel çözücülerle temizlenir.
+**Aşama Aşama İnşaat Sonrası Temizlik**
 
-**4. Aşama: Zemin Cilalama**
-Zemin yıkanır ve gerekirse cila uygulanır.`,
+**1. Kaba Temizlik:** İnşaat artıkları, moloz ve büyük atıklar toplanır.
+**2. İnce Toz Temizliği:** HEPA filtreli ekipmanlarla tavan, duvar ve zeminler temizlenir.
+**3. Boya ve Kireç Leke Temizliği:** Cam, çerçeve ve seramiklerdeki boya lekeleri özel çözücülerle çıkarılır.
+**4. Zemin Yıkama:** Fayans, parke ve mermer zeminler yıkanır, gerekirse cila uygulanır.
+**5. Son Kontrol:** Tüm yüzeyler kontrol edilerek eksikler giderilir.
+
+Zirve Temizlik olarak İstanbul'un tüm ilçelerinde inşaat sonrası temizlik hizmeti sunuyoruz. 7/24 randevu için hemen arayın.`,
+  },
+  {
+    slug: "ofis-temizligi-istanbul-kurumsal",
+    title: "İstanbul Ofis Temizliği — Kurumsal Temizlik Hizmetleri",
+    excerpt:
+      "İstanbul'da ofis temizliği için doğru firmayı seçin. Çalışan verimliliği ve kurumsal imaj için profesyonel temizlik şart.",
+    date: "2026-05-01",
+    category: "Kurumsal",
+    readTime: "4 dk",
+    content: `İstanbul'da faaliyet gösteren işletmeler için temiz bir ofis ortamı hem çalışan verimliliğini artırır hem de müşterilerinize güven verir.
+
+**Neden Profesyonel Ofis Temizliği?**
+Araştırmalar temiz ofis ortamında çalışan verimliliğinin yüzde 15 arttığını göstermektedir. Düzenli dezenfeksiyon ise hastalık kaynaklı devamsızlığı önemli ölçüde azaltır.
+
+**Ofis Temizliğinde Dikkat Edilmesi Gerekenler**
+
+**Çalışma Saatleri Dışında Hizmet**
+Personelinizi rahatsız etmemek için gece veya hafta sonu temizlik hizmeti tercih edilmelidir.
+
+**Düzenli Dezenfeksiyon**
+Kapı kolları, klavyeler, telefon ahizeleri ve ortak alanlar düzenli olarak dezenfekte edilmelidir.
+
+**Zemin Bakımı**
+Ofis zeminlerinin düzenli temizliği ve bakımı uzun ömürlü olmasını sağlar.
+
+**Tuvalet ve Mutfak Hijyeni**
+Ortak kullanım alanlarının günlük dezenfeksiyonu salgın hastalıkların önüne geçer.
+
+Zirve Temizlik olarak İstanbul genelinde haftalık, aylık veya tek seferlik kurumsal ofis temizliği hizmeti sunuyoruz. Teklif için hemen iletişime geçin.`,
+  },
+  {
+    slug: "villa-temizligi-istanbul",
+    title: "Villa Temizliği İstanbul — Büyük Alan Temizlik Hizmeti",
+    excerpt:
+      "İstanbul ve çevresindeki villa ve müstakil evler için profesyonel temizlik hizmeti. Geniş alanlara özel ekip ve ekipman.",
+    date: "2026-04-25",
+    category: "Hizmet",
+    readTime: "4 dk",
+    content: `İstanbul'un villa bölgelerinde büyük alanların temizliği özel ekip ve ekipman gerektirmektedir.
+
+**Villa Temizliği Standart Ev Temizliğinden Farkı Nedir?**
+Villalar çok katlı yapıları, geniş bahçe girişleri ve büyük cam yüzeyleriyle standart temizlik ekipmanlarının yetersiz kaldığı alanlardır.
+
+**Villa Temizliğinde Neler Yapılır?**
+
+- Tüm kat ve oda temizliği
+- Büyük cam ve pencere silimi
+- Giriş ve merdiven temizliği
+- Mutfak ve banyo derin temizliği
+- Halı, koltuk ve perde temizliği
+- Balkon ve teras temizliği
+
+**Düzenli Abonelik Avantajları**
+Aylık düzenli temizlik anlaşması yapan villa sahipleri hem zaman kazanır hem de daha uygun fiyattan hizmet alır.
+
+Zirve Temizlik olarak İstanbul genelinde villa temizliği hizmeti sunuyoruz. Büyük alanlarınız için özel fiyat teklifi almak üzere hemen arayın.`,
+  },
+  {
+    slug: "bina-apartman-temizligi-istanbul",
+    title: "Bina ve Apartman Temizliği İstanbul — Ortak Alan Temizliği",
+    excerpt:
+      "İstanbul'da apartman ve bina ortak alanlarınızın düzenli temizliği için profesyonel hizmet. Giriş, merdiven, asansör temizliği.",
+    date: "2026-04-20",
+    category: "Hizmet",
+    readTime: "4 dk",
+    content: `İstanbul'da apartman ve bina yöneticileri için ortak alanların düzenli temizliği hem estetik hem de hijyen açısından büyük önem taşır.
+
+**Bina Temizliğinde Hangi Alanlar Kapsamaktadır?**
+
+- Giriş holü ve lobi temizliği
+- Kat merdivenleri ve koridorlar
+- Asansör kabini ve kapıları
+- Çöp odası dezenfeksiyonu
+- Bodrum kat temizliği
+
+**Haftalık veya Aylık Abonelik**
+Düzenli bina temizliği için aylık abonelik sistemi hem bütçe dostu hem de sürdürülebilir bir çözümdür.
+
+**Profesyonel Ekipman**
+Endüstriyel zemin yıkama makineleri ve uygun kimyasallar kullanarak mermer, granit ve seramik zeminleri zarar vermeden temizliyoruz.
+
+Zirve Temizlik olarak İstanbul Arnavutköy başta olmak üzere tüm ilçelerde bina ve apartman temizliği hizmeti sunmaktayız.`,
   },
 ];
 
