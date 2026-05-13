@@ -321,6 +321,68 @@ Endüstriyel zemin yıkama makineleri ve uygun kimyasallar kullanarak mermer, gr
 
 Zirve Temizlik olarak İstanbul Arnavutköy başta olmak üzere tüm ilçelerde bina ve apartman temizliği hizmeti sunmaktayız.`,
   },
+  {
+    slug: "arnavutkoy-temizlik-sirketi",
+    title: "Arnavutköy Temizlik Şirketi — Ev, Ofis ve Bina Temizliği",
+    excerpt:
+      "Arnavutköy'de profesyonel temizlik hizmeti arıyorsanız doğru adrestesiniz. 7/24 hizmet, sigortalı ekip, aynı gün temizlik.",
+    date: "2026-05-10",
+    category: "Bölge",
+    readTime: "4 dk",
+    content: `Arnavutköy'de profesyonel temizlik hizmeti sunan Zirve Temizlik, bölgenin en güvenilir temizlik firmalarından biridir.
+
+**Arnavutköy'de Hangi Temizlik Hizmetlerini Sunuyoruz?**
+
+Arnavutköy ilçesinde ev temizliği, ofis temizliği, bina temizliği, inşaat sonrası temizlik ve villa temizliği hizmetleri vermekteyiz.
+
+**Neden Arnavutköy'de Zirve Temizlik?**
+
+- Hicret Mahallesi merkezli olduğumuz için Arnavutköy'e en hızlı ulaşan ekibiz
+- Aynı gün hizmet imkânı
+- 7/24 randevu ve acil temizlik
+- Sigortalı ve eğitimli personel
+- Şeffaf fiyatlandırma, gizli ücret yok
+
+**Arnavutköy Mahallelerinde Hizmet Bölgelerimiz**
+
+Hicret, Haraç, Bolluca, Durusu, Yeşilbayır, Boğazköy, Taşoluk ve tüm Arnavutköy mahallelerinde temizlik hizmeti sunuyoruz.
+
+**Arnavutköy Ev Temizliği Fiyatları**
+
+Arnavutköy'de ev büyüklüğüne ve temizlik kapsamına göre fiyatlarımız değişmektedir. Ücretsiz keşif için hemen arayın: 0532 546 61 63
+
+Zirve Temizlik olarak Arnavutköy ve çevre ilçelerde profesyonel temizlik hizmeti sunmaya devam ediyoruz.`,
+  },
+  {
+    slug: "basaksehir-temizlik-sirketi",
+    title: "Başakşehir Temizlik Şirketi — Profesyonel Ev ve Ofis Temizliği",
+    excerpt:
+      "Başakşehir'de güvenilir temizlik şirketi arıyorsanız Zirve Temizlik hizmetinizdedir. Sigortalı ekip, uygun fiyat, 7/24 hizmet.",
+    date: "2026-05-09",
+    category: "Bölge",
+    readTime: "4 dk",
+    content: `Başakşehir'de profesyonel temizlik hizmeti veren Zirve Temizlik, bölgedeki konut ve iş yerlerine kaliteli temizlik çözümleri sunmaktadır.
+
+**Başakşehir'de Sunduğumuz Temizlik Hizmetleri**
+
+- Ev ve daire temizliği
+- Ofis ve iş yeri temizliği
+- Rezidans temizliği
+- İnşaat sonrası temizlik
+- Bina ortak alan temizliği
+
+**Başakşehir'in Yeni Gelişen Bölgelerine Özel Hizmet**
+
+Başakşehir, İstanbul'un en hızlı gelişen ilçelerinden biridir. Yeni yapılaşma ve inşaat projelerinin yoğunluğu nedeniyle inşaat sonrası temizlik talebinin en fazla olduğu bölgelerindendir. Zirve Temizlik olarak bu ihtiyaca özel ekipman ve uzman ekibimizle hizmet veriyoruz.
+
+**Başakşehir'de Hizmet Verdiğimiz Mahalleler**
+
+Başakşehir merkez, Kayabaşı, Ziya Gökalp, Güvercintepe ve tüm Başakşehir mahallelerinde temizlik hizmeti sunuyoruz.
+
+**Ücretsiz Teklif Alın**
+
+Başakşehir'deki eviniz, ofisiniz veya iş yeriniz için ücretsiz keşif ve fiyat teklifi almak için hemen arayın: 0532 546 61 63`,
+  },
 ];
 
 export const DISTRICTS = [

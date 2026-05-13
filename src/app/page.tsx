@@ -28,19 +28,31 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  name: SITE_NAME,
-  image: `${SITE_URL}/og-image.jpg`,
-  description:
-    "İstanbul'un güvenilir profesyonel temizlik şirketi. Ev, ofis, derin temizlik ve daha fazlası.",
   "@id": SITE_URL,
+  name: SITE_NAME,
+  image: `${SITE_URL}/images/logo.jpg`,
+  description:
+    "İstanbul Arnavutköy merkezli profesyonel temizlik şirketi. Ev, ofis, villa, bina, fabrika, rezidans ve inşaat sonrası temizlik hizmetleri. 7/24 hizmet.",
   url: SITE_URL,
   telephone: "+90-532-546-61-63",
+  email: "kul12ibo@gmail.com",
+  priceRange: "₺₺",
   address: {
     "@type": "PostalAddress",
     streetAddress: "Hicret Mah. Taşkın Sok. No:25/3",
     addressLocality: "Arnavutköy",
     addressRegion: "İstanbul",
+    postalCode: "34275",
     addressCountry: "TR",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 41.1836,
+    longitude: 28.7342,
+  },
+  areaServed: {
+    "@type": "City",
+    name: "İstanbul",
   },
   openingHoursSpecification: [
     {
@@ -51,10 +63,18 @@ const jsonLd = {
     },
   ],
   sameAs: ["https://www.instagram.com/temizlikzirve"],
-  aggregateRating: {
-    "@type": "AggregateRating",
-    ratingValue: "4.9",
-    reviewCount: "248",
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Temizlik Hizmetleri",
+    itemListElement: [
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ev Temizliği İstanbul" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Ofis Temizliği İstanbul" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Villa Temizliği İstanbul" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "İnşaat Sonrası Temizlik İstanbul" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Bina Temizliği İstanbul" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Fabrika Temizliği İstanbul" } },
+      { "@type": "Offer", itemOffered: { "@type": "Service", name: "Rezidans Temizliği İstanbul" } },
+    ],
   },
 };
 
