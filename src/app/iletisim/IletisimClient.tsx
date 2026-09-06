@@ -1,22 +1,19 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion, AnimatePresence } from "framer-motion";
-import { Phone, Mail, MapPin, Clock, Send, ChevronRight, CheckCircle, Shield, Star, Zap } from "lucide-react";
-import { PHONE, EMAIL, ADDRESS, WORKING_HOURS, WHATSAPP, MAPS_URL } from "@/lib/constants";
+import { motion } from "framer-motion";
+import { Phone, MapPin, Clock, ChevronRight, CheckCircle, Shield, Star, Zap } from "lucide-react";
+import { PHONE, ADDRESS, WORKING_HOURS, WHATSAPP, MAPS_URL } from "@/lib/constants";
 
 const contactInfo = [
   { icon: Phone, label: "Telefon", value: PHONE, href: `tel:${PHONE}`, color: "blue" },
-  { icon: Mail, label: "E-posta", value: EMAIL, href: `mailto:${EMAIL}`, color: "purple" },
   { icon: MapPin, label: "Adres", value: ADDRESS, href: MAPS_URL, color: "red" },
   { icon: Clock, label: "Çalışma Saatleri", value: WORKING_HOURS, href: null, color: "green" },
 ];
 
 const iconColorMap: Record<string, string> = {
   blue: "bg-blue-100 text-blue-600",
-  purple: "bg-purple-100 text-purple-600",
   red: "bg-red-100 text-red-600",
   green: "bg-green-100 text-green-600",
 };
@@ -47,32 +44,6 @@ const slideLeft = {
 };
 
 export default function IletisimClient() {
-  const [formData, setFormData] = useState({ name: "", phone: "", email: "", service: "", message: "" });
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [focused, setFocused] = useState<string | null>(null);
-
-  const [error, setError] = useState<string | null>(null);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setError(null);
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      if (!res.ok) throw new Error("Hata");
-      setSubmitted(true);
-    } catch {
-      setError("Mesaj gönderilemedi. Lütfen telefonla ulaşın.");
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const whatsappMsg = encodeURIComponent("Merhaba! Teklif almak istiyorum.");
 
   return (
@@ -275,7 +246,7 @@ export default function IletisimClient() {
               </motion.div>
             </div>
 
-            {/* ── SAĞ: Form ── */}
+            {/* ── SAĞ: Hızlı İletişim CTA ── */}
             <motion.div
               variants={slideLeft}
               initial="hidden"
@@ -283,248 +254,57 @@ export default function IletisimClient() {
               viewport={{ once: true }}
               className="lg:col-span-3"
             >
-              <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
-                <AnimatePresence mode="wait">
-                  {submitted ? (
-                    /* ── Başarı Mesajı ── */
-                    <motion.div
-                      key="success"
-                      initial={{ opacity: 0, scale: 0.85 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      exit={{ opacity: 0 }}
-                      transition={{ type: "spring", stiffness: 200, damping: 18 }}
-                      className="text-center py-14"
-                    >
-                      <motion.div
-                        initial={{ scale: 0 }}
-                        animate={{ scale: 1 }}
-                        transition={{ type: "spring", stiffness: 260, damping: 16, delay: 0.1 }}
-                        className="w-24 h-24 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6"
-                      >
-                        <motion.div
-                          initial={{ pathLength: 0 }}
-                          animate={{ pathLength: 1 }}
-                        >
-                          <CheckCircle size={48} className="text-green-500" strokeWidth={1.5} />
-                        </motion.div>
-                      </motion.div>
-                      <motion.h3
-                        initial={{ opacity: 0, y: 12 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.25 }}
-                        className="text-2xl font-extrabold text-gray-900 mb-2"
-                      >
-                        Mesajınız Alındı! 🎉
-                      </motion.h3>
-                      <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.35 }}
-                        className="text-gray-600 mb-2"
-                      >
-                        En kısa sürede sizinle iletişime geçeceğiz.
-                      </motion.p>
-                      <motion.p
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{ delay: 0.42 }}
-                        className="text-blue-600 font-semibold text-sm mb-7"
-                      >
-                        Genellikle 15 dakika içinde dönüş yapıyoruz.
-                      </motion.p>
-                      <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 }}
-                        className="flex gap-3 justify-center"
-                      >
-                        <Link
-                          href="/"
-                          className="bg-blue-700 text-white font-bold py-2.5 px-6 rounded-xl hover:bg-blue-800 transition-colors"
-                        >
-                          Ana Sayfaya Dön
-                        </Link>
-                        <a
-                          href={`https://wa.me/${WHATSAPP}?text=${whatsappMsg}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="bg-green-500 text-white font-bold py-2.5 px-6 rounded-xl hover:bg-green-600 transition-colors"
-                        >
-                          WhatsApp
-                        </a>
-                      </motion.div>
-                    </motion.div>
-                  ) : (
-                    /* ── Form ── */
-                    <motion.div key="form" initial={{ opacity: 1 }} exit={{ opacity: 0 }}>
-                      <h2 className="text-2xl font-extrabold text-gray-900 mb-1">
-                        Ücretsiz Teklif Formu
-                      </h2>
-                      <p className="text-gray-500 mb-7 text-sm">
-                        Formu doldurun, 15 dakika içinde size dönelim. Gizli ücret yok.
-                      </p>
+              <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 md:p-10 h-full flex flex-col justify-center">
+                <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6">
+                  <Phone size={30} />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-3">
+                  Ücretsiz Keşif ve Teklif
+                </h2>
+                <p className="text-gray-600 mb-8 max-w-md">
+                  Bizi arayın ya da WhatsApp&apos;tan yazın — 15 dakika içinde net fiyat verelim.
+                  Gizli ücret yok, keşif tamamen ücretsiz.
+                </p>
 
-                      <form onSubmit={handleSubmit} className="space-y-5">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                          {/* Ad Soyad */}
-                          <motion.div
-                            initial={{ opacity: 0, y: 12 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.25 }}
-                          >
-                            <label className="block text-sm font-bold text-gray-700 mb-1.5">Ad Soyad *</label>
-                            <input
-                              type="text"
-                              required
-                              placeholder="Adınız Soyadınız"
-                              value={formData.name}
-                              onFocus={() => setFocused("name")}
-                              onBlur={() => setFocused(null)}
-                              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                              className={`w-full border-2 rounded-xl px-4 py-3 text-sm outline-none transition-all duration-200 ${
-                                focused === "name" ? "border-blue-500 shadow-[0_0_0_3px_rgba(59,130,246,0.1)]" : "border-gray-200"
-                              }`}
-                            />
-                          </motion.div>
+                <div className="flex flex-col sm:flex-row gap-3 mb-8">
+                  <a
+                    href={`tel:${PHONE}`}
+                    className="flex-1 flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-extrabold py-4 px-6 rounded-xl transition-colors text-base"
+                  >
+                    <Phone size={18} />
+                    Hemen Ara
+                  </a>
+                  <a
+                    href={`https://wa.me/${WHATSAPP}?text=${whatsappMsg}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-extrabold py-4 px-6 rounded-xl transition-colors text-base"
+                  >
+                    WhatsApp&apos;tan Yaz
+                  </a>
+                </div>
 
-                          {/* Telefon */}
-                          <motion.div
-                            initial={{ opacity: 0, y: 12 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: 0.32 }}
-                          >
-                            <label className="block text-sm font-bold text-gray-700 mb-1.5">Telefon *</label>
-                            <input
-                              type="tel"
-                              required
-                              placeholder="0532 000 00 00"
-                              value={formData.phone}
-                              onFocus={() => setFocused("phone")}
-                              onBlur={() => setFocused(null)}
-                              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                              className={`w-full border-2 rounded-xl px-4 py-3 text-sm outline-none transition-all duration-200 ${
-                                focused === "phone" ? "border-blue-500 shadow-[0_0_0_3px_rgba(59,130,246,0.1)]" : "border-gray-200"
-                              }`}
-                            />
-                          </motion.div>
-                        </div>
+                <a href={`tel:${PHONE}`} className="text-2xl md:text-3xl font-extrabold text-gray-900 hover:text-blue-600 transition-colors mb-2 block">
+                  {PHONE}
+                </a>
+                <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
+                  <Clock size={15} className="text-blue-600" />
+                  {WORKING_HOURS} — her zaman ulaşabilirsiniz
+                </div>
 
-                        {/* E-posta */}
-                        <motion.div
-                          initial={{ opacity: 0, y: 12 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: 0.38 }}
-                        >
-                          <label className="block text-sm font-bold text-gray-700 mb-1.5">E-posta</label>
-                          <input
-                            type="email"
-                            placeholder="ornek@email.com"
-                            value={formData.email}
-                            onFocus={() => setFocused("email")}
-                            onBlur={() => setFocused(null)}
-                            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                            className={`w-full border-2 rounded-xl px-4 py-3 text-sm outline-none transition-all duration-200 ${
-                              focused === "email" ? "border-blue-500 shadow-[0_0_0_3px_rgba(59,130,246,0.1)]" : "border-gray-200"
-                            }`}
-                          />
-                        </motion.div>
-
-                        {/* Hizmet */}
-                        <motion.div
-                          initial={{ opacity: 0, y: 12 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: 0.44 }}
-                        >
-                          <label className="block text-sm font-bold text-gray-700 mb-1.5">İstediğiniz Hizmet *</label>
-                          <select
-                            required
-                            value={formData.service}
-                            onFocus={() => setFocused("service")}
-                            onBlur={() => setFocused(null)}
-                            onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                            className={`w-full border-2 rounded-xl px-4 py-3 text-sm outline-none transition-all duration-200 bg-white ${
-                              focused === "service" ? "border-blue-500 shadow-[0_0_0_3px_rgba(59,130,246,0.1)]" : "border-gray-200"
-                            }`}
-                          >
-                            <option value="">Hizmet Seçin</option>
-                            <option value="ev">🏠 Ev Temizliği</option>
-                            <option value="ofis">🏢 Ofis Temizliği</option>
-                            <option value="derin">🔬 Derin Temizlik</option>
-                            <option value="insaat">🏗️ İnşaat Sonrası Temizlik</option>
-                            <option value="cam">🪟 Cam Temizliği</option>
-                            <option value="hali">🛋️ Halı & Koltuk Yıkama</option>
-                            <option value="diger">📋 Diğer</option>
-                          </select>
-                        </motion.div>
-
-                        {/* Mesaj */}
-                        <motion.div
-                          initial={{ opacity: 0, y: 12 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: 0.5 }}
-                        >
-                          <label className="block text-sm font-bold text-gray-700 mb-1.5">Mesajınız</label>
-                          <textarea
-                            rows={4}
-                            placeholder="Detayları paylaşırsanız daha hızlı teklif verebiliriz (alan m², kat, özel istek vb.)"
-                            value={formData.message}
-                            onFocus={() => setFocused("message")}
-                            onBlur={() => setFocused(null)}
-                            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                            className={`w-full border-2 rounded-xl px-4 py-3 text-sm outline-none transition-all duration-200 resize-none ${
-                              focused === "message" ? "border-blue-500 shadow-[0_0_0_3px_rgba(59,130,246,0.1)]" : "border-gray-200"
-                            }`}
-                          />
-                        </motion.div>
-
-                        {/* Submit */}
-                        <motion.div
-                          initial={{ opacity: 0, y: 12 }}
-                          whileInView={{ opacity: 1, y: 0 }}
-                          viewport={{ once: true }}
-                          transition={{ delay: 0.55 }}
-                        >
-                          <motion.button
-                            type="submit"
-                            disabled={loading}
-                            whileHover={{ scale: loading ? 1 : 1.02 }}
-                            whileTap={{ scale: loading ? 1 : 0.97 }}
-                            className="w-full bg-blue-700 text-white font-extrabold py-4 px-6 rounded-xl hover:bg-blue-800 transition-colors flex items-center justify-center gap-2 disabled:opacity-60 text-base"
-                          >
-                            {loading ? (
-                              <span className="flex items-center gap-2">
-                                <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24" fill="none">
-                                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
-                                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
-                                </svg>
-                                Gönderiliyor...
-                              </span>
-                            ) : (
-                              <>
-                                <Send size={18} />
-                                Ücretsiz Teklif İste
-                              </>
-                            )}
-                          </motion.button>
-                        </motion.div>
-
-                        {error && (
-                          <p className="text-sm text-red-600 text-center bg-red-50 border border-red-200 rounded-xl py-3 px-4">
-                            ⚠️ {error}
-                          </p>
-                        )}
-                        <p className="text-xs text-gray-400 text-center">
-                          🔒 Bilgileriniz güvenle saklanır. Üçüncü şahıslarla paylaşılmaz.
-                        </p>
-                      </form>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
+                <div className="grid grid-cols-2 gap-3 pt-6 border-t border-gray-100">
+                  {[
+                    "Ücretsiz keşif ve teklif",
+                    "15 dakika içinde dönüş",
+                    "Sigortalı, eğitimli ekip",
+                    "%100 memnuniyet garantisi",
+                  ].map((item) => (
+                    <div key={item} className="flex items-center gap-2 text-xs text-gray-700">
+                      <CheckCircle size={14} className="text-green-500 shrink-0" />
+                      {item}
+                    </div>
+                  ))}
+                </div>
               </div>
             </motion.div>
           </div>

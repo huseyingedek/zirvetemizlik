@@ -5,7 +5,7 @@ import IletisimClient from "./IletisimClient";
 export const metadata: Metadata = {
   title: "İletişim | Ücretsiz Teklif ve Keşif",
   description:
-    "Zirve Temizlik ile iletişime geçin. Ücretsiz keşif ve fiyat teklifi için hemen arayın veya formu doldurun. İstanbul genelinde hızlı hizmet.",
+    "Zirve Temizlik ile iletişime geçin. Ücretsiz keşif ve fiyat teklifi için hemen arayın veya WhatsApp'tan yazın. İstanbul genelinde hızlı hizmet.",
   keywords: [
     "zirve temizlik iletişim",
     "temizlik teklif",
