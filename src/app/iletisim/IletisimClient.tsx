@@ -44,7 +44,7 @@ const slideLeft = {
 };
 
 export default function IletisimClient() {
-  const whatsappMsg = encodeURIComponent("Merhaba! Teklif almak istiyorum.");
+  const whatsappMsg = encodeURIComponent("Merhaba, hizmetleriniz nelerdir? Fiyat bilgisi almak istiyorum.");
 
   return (
     <>

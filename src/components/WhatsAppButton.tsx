@@ -2,7 +2,7 @@ import { WHATSAPP } from "@/lib/constants";
 
 export default function WhatsAppButton() {
   const message = encodeURIComponent(
-    "Merhaba! Zirve Temizlik hizmetleri hakkında bilgi almak istiyorum."
+    "Merhaba, hizmetleriniz nelerdir? Fiyat bilgisi almak istiyorum."
   );
 
   return (

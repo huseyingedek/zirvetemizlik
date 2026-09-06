@@ -40,7 +40,7 @@ export default function Footer() {
             </a>
             {/* WhatsApp */}
             <a
-              href={`https://wa.me/905325466163`}
+              href={`https://wa.me/905325466163?text=Merhaba%2C%20hizmetleriniz%20nelerdir%3F%20Fiyat%20bilgisi%20almak%20istiyorum.`}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="WhatsApp"

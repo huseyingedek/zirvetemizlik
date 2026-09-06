@@ -74,7 +74,7 @@ const stats = [
 
 export default function HizmetBolgeleriPage() {
   const whatsappMsg = encodeURIComponent(
-    "Merhaba! Bölgemde temizlik hizmeti almak istiyorum, teklif alabilir miyim?"
+    "Merhaba, hizmetleriniz nelerdir? Fiyat bilgisi almak istiyorum."
   );
 
   return (

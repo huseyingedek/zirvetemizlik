@@ -11,7 +11,7 @@ export default function CTASection({
   title = "Ücretsiz Keşif ve Teklif Alın",
   subtitle = "Uzman ekibimiz evinize veya iş yerinize gelsin, ihtiyaçlarınızı belirlesin ve size en uygun fiyatı sunsun.",
 }: CTASectionProps) {
-  const message = encodeURIComponent("Merhaba! Temizlik hizmeti teklifi almak istiyorum.");
+  const message = encodeURIComponent("Merhaba, hizmetleriniz nelerdir? Fiyat bilgisi almak istiyorum.");
 
   return (
     <section className="bg-blue-700 py-16">

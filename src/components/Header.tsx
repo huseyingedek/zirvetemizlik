@@ -18,7 +18,7 @@ export default function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const whatsappMsg = encodeURIComponent("Merhaba! Temizlik hizmeti hakkında bilgi almak istiyorum.");
+  const whatsappMsg = encodeURIComponent("Merhaba, hizmetleriniz nelerdir? Fiyat bilgisi almak istiyorum.");
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">

@@ -145,7 +145,7 @@ const whyUs = [
 
 export default function HomePage() {
   const whatsappMsg = encodeURIComponent(
-    "Merhaba! Temizlik hizmeti hakkında bilgi almak istiyorum."
+    "Merhaba, hizmetleriniz nelerdir? Fiyat bilgisi almak istiyorum."
   );
 
   return (
